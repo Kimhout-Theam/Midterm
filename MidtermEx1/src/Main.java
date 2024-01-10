@@ -11,5 +11,6 @@ public class Main {
       int month = Integer.parseInt(split[1]);
       Month monthName = Month.of(month);
       System.out.println(monthName +" " + split[2]+", "+split[0]);
+        intput.close();
         }
     }
