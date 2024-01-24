@@ -25,13 +25,17 @@ public class Main {
                 System.out.println("Correct Answer: " + randomNumber);
                 System.out.println("Wrong Guessed: " + wrong);
                 return;
-            } else if (user_answer > max || user_answer < min) {
+            } else if (user_answer > randomNumber) {
+                System.out.println("Lower");
+            } else {
+                System.out.println("Higher");
+            } if (user_answer > max || user_answer < min) {
                 System.out.println("The Number Entered is Out of Range!!");
             } else {
                 ++wrong;
                 System.out.println("Incorrect! Please Try Again!");
             }
-            input.close();
         }
+
     }
 }
